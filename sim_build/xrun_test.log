@@ -1,0 +1,3 @@
+xmsim: *W,AIEOS: ALLOW_INCISIVE_LIC option will be retired from a future release.
+xcelium> source /hwnet/cadence/xcelium/xcelium2024.09_s004/tools/xcelium/files/xmsimrc
+xcelium> run; exit;

@@ -1,0 +1,26 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+/u/pancholv/Desktop/sv_uvm/python_stuff/cocotb_projects/alu_v2/alu/sim_build/xrun_snapshot/run.lnx8664.24.09.d
+-RUNMODE
+-amsdlibdir
+/u/pancholv/Desktop/sv_uvm/python_stuff/cocotb_projects/alu_v2/alu/sim_build/xrun_snapshot/AMSD
+-XMLIBDIRNAME
+/u/pancholv/Desktop/sv_uvm/python_stuff/cocotb_projects/alu_v2/alu/sim_build/xrun_snapshot
+-WORK
+top
+/u/pancholv/Desktop/sv_uvm/python_stuff/cocotb_projects/alu_v2/alu/rtl/alu_interface.sv
+/u/pancholv/Desktop/sv_uvm/python_stuff/cocotb_projects/alu_v2/alu/rtl/alu.sv
+/u/pancholv/Desktop/sv_uvm/python_stuff/cocotb_projects/alu_v2/alu/rtl/top.sv
+-CDSLIB
+/u/pancholv/Desktop/sv_uvm/python_stuff/cocotb_projects/alu_v2/alu/sim_build/xrun_snapshot/run.lnx8664.24.09.d/cdsrun.lib
+-HDLVAR
+/u/pancholv/Desktop/sv_uvm/python_stuff/cocotb_projects/alu_v2/alu/sim_build/xrun_snapshot/run.lnx8664.24.09.d/hdlrun.var
+-no_analogsolver
+-UPDATE
+-XLLIBSTORE
+/u/pancholv/Desktop/sv_uvm/python_stuff/cocotb_projects/alu_v2/alu/sim_build/xrun_snapshot/run.lnx8664.24.09.d/xllibs
+-ALLOWUNBOUND
+-hastop
