@@ -1,3 +1,24 @@
-sim_build/xrun_snapshot/*
-sim_build/implicit_tmpdir_test/top/*
-sim_build/*
+# Build / simulation outputs
+sim_build/
+xrun.log
+xcelium.d/
+xrun_history
+*.history
+*.args
+*.log
+
+# Snapshots
+xrun_snapshot/
+INCA_libs/
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Cocotb results
+results.xml
+
+# VSCode / Editor junk
+.vscode/
+.idea/
+
