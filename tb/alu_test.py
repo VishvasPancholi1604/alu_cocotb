@@ -20,11 +20,18 @@ async def alu_sanity_test(dut):
         width = 8
         print(f'could not find width, default is 8')
 
-    txn_h = ALUTransaction(a=7,b=3,op=1)
     alu_driver = Driver(dut, dut.clk)
-    monitor = Monitor(dut, dut.clk)
-    mon_task = cocotb.start_soon(monitor.sample())
-    await alu_driver.drive(txn_h)
-    print(f'output: {int(dut.alu_intf.result_o.value)}')
-    await Timer(10, unit="ns")
+    alu_monitor = Monitor(dut, dut.clk)
+    drv_task = cocotb.start_soon(alu_driver.drive())
+    mon_task = cocotb.start_soon(alu_monitor.sample())
+
+    txn_h = ALUTransaction(a=7,b=3,op=1)
+    await alu_driver.push(txn_h)
+
+    txn_h = ALUTransaction(a=2,b=9,op=0)
+    await alu_driver.push(txn_h)
+
+    #await alu_driver.drive(txn_h)
+    #print(f'output: {int(dut.alu_intf.result_o.value)}')
+    await Timer(50, unit="ns")
     #print(txn_h.print())
