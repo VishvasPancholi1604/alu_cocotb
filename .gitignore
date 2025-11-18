@@ -1,0 +1,3 @@
+sim_build/xrun_snapshot/*
+sim_build/implicit_tmpdir_test/top/*
+sim_build/*

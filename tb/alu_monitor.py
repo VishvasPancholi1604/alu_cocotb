@@ -5,7 +5,7 @@ import sys
 current_directory_path = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(current_directory_path)
 
-from cocotb.triggers import RisingEdge
+from cocotb.triggers import RisingEdge, ReadOnly
 from alu_seq_item import ALUTransaction
 
 
@@ -15,12 +15,9 @@ class Monitor:
         self.clk = clk
 
     async def sample(self):
-        print(f'Hii')
         while True:
-            print(f'In while')
             await RisingEdge(self.clk)
-            print(f'After rise edge')
-            # await ReadOnly()
+            await ReadOnly()
             txn = ALUTransaction()
             txn.a = int(self.dut.alu_intf.a_i.value)
             txn.b = int(self.dut.alu_intf.b_i.value)

@@ -9,7 +9,7 @@ from global_methods import *
 from alu_seq_item import ALUTransaction
 from alu_driver import Driver
 from alu_monitor import Monitor
-
+from cocotb.triggers import Timer
 
 @cocotb.test()
 async def alu_sanity_test(dut):
@@ -26,4 +26,5 @@ async def alu_sanity_test(dut):
     mon_task = cocotb.start_soon(monitor.sample())
     await alu_driver.drive(txn_h)
     print(f'output: {int(dut.alu_intf.result_o.value)}')
+    await Timer(10, unit="ns")
     #print(txn_h.print())
