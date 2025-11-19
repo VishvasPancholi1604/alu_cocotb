@@ -1,5 +1,6 @@
 # Build / simulation outputs
 sim_build/
+.simvision/
 xrun.log
 xcelium.d/
 xrun_history

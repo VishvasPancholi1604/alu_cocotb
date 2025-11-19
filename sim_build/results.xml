@@ -1,6 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1763455646" />
-    <testcase name="alu_sanity_test" classname="tb.alu_test" file="/u/pancholv/Desktop/sv_uvm/python_stuff/cocotb_projects/alu_v2/alu/tb/alu_test.py" lineno="14" time="0.0043485164642333984" sim_time_ns="50.0" ratio_time="11498.174242008881" />
-  </testsuite>
-</testsuites>
