@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // `include "alu_interface.sv"
 // `include "alu.sv"
 
@@ -33,6 +34,10 @@ module top;
 
     initial
     begin
+`ifdef COCOTB_SIM
+        $dumpfile("dump.vcd");
+        $dumpvars(0, top);
+`endif
         #100; $finish();
     end
 
