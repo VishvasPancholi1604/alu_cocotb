@@ -17,6 +17,7 @@ def run_simulation(args):
     sim = get_runner("icarus")
     
     sources = [
+        os.path.join("rtl", "cocotb_timescale.sv"),
         os.path.join("rtl", "alu_interface.sv"),
         os.path.join("rtl", "alu.sv"),
         os.path.join("rtl", "top.sv")

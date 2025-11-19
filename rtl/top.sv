@@ -1,4 +1,3 @@
-`timescale 1ns/1ps
 // `include "alu_interface.sv"
 // `include "alu.sv"
 
